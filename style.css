@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tilt+Warp&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Tilt Warp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #282828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+   background: black;
+   padding: 25px;
+   border-radius: 15px;
+
+}
+
+/*this is button style*/
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 24px;
+  color: rgb(228, 228, 228);
+  cursor: grab;
+  margin: 10px;
+  transition: 0.9s ease;
+
+
+}
+
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  background-color: rgb(0, 54, 11);
+  border-radius: 10px;
+  border: 3px solid black;
+
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+  color: black
+}
+
+form input.equal {
+  width: 145px;
+}
+
+
+
+
+
+
+
+
+
+.calculator form input:hover {
+   background-color: white;
+   box-shadow: 0 0 5px white,
+               0 0 10px white,
+               0 0 15px white;
+  color: black;
+ transition: 5ms;
+}
+
+.calculator form input:active {
+   background-color: rgb(206, 206, 206);
+   color: black;
+   box-shadow: 0 0 1px white,
+               0 0 2px white,
+               0 0 3px white,
+               0 0 4px white,
+               0 0 5px white;
+
+  cursor: grabbing;
+
+   transition: 0.1s ease;
+}
